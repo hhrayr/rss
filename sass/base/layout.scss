@@ -1,0 +1,60 @@
+@keyframes shift {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  40% {
+    transform: translateX(0);
+  }
+
+  60% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+
+  &.wrapper-lg {
+    max-width: 1240px;
+  }
+}
+
+.page {
+  &-padded {
+    padding: 5rem 0;
+  }
+
+  section {
+    margin-bottom: 11rem;
+  }
+}
+
+@include mq($until: sm) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .page {
+    &-padded {
+      padding: 2.5rem 0;
+    }
+  }
+
+  section {
+    margin-bottom: 13rem;
+  }
+}
+
+@include mq($until: xs) {
+  .wrapper {
+    padding: 0 10px;
+  }
+}

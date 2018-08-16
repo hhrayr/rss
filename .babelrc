@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "es6-promise",
+    "transform-flow-strip-types",
+    "react-hot-loader/babel",
+    ["module-resolver", {
+      "alias": {
+        "Redux":  "./redux",
+        "Sagas": "./sagas",
+        "Components":  "./components",
+        "Routes": "./routes",
+        "Utils": "./utils"
+      }
+    }],
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-function-bind",
+    "@babel/plugin-transform-object-assign",
+    "@babel/plugin-proposal-export-default-from"
+  ]
+}

@@ -1,0 +1,24 @@
+header {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  .logo {
+    border: 2px gray solid;
+    padding: 10px;
+  }
+
+  nav {
+    flex-grow: 1;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        margin-left: 15px;
+      }
+    }
+  }
+}
